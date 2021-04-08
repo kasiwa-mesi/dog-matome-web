@@ -41,5 +41,24 @@ Chrome最新版で適切に動けばいいとする。
 - 大量の画像を読み込むによるパフォーマンスの低下は画像形式をWebPに変更し、LazyLoadを実装したことにより、かなりマシになったっぽい。
 
 ## ガタン問題への対処
+### 改善前
+![](https://gyazo.com/76b1ab668025b237ba3c00180f2812b0)
+- どうしても、画像が読み込まれることで、ボタンのクリックがずれる可能性がある。
+### 改善後
+![](https://gyazo.com/17343c25bf7a71cf68da2994e08ff567)
+- 単純に、画像を覆っているdiv要素に高さを指定することでズレを防ぐことができた。
+- どうやら、WEBページが画像などの読み込みにより、初回読み込み時とコンテンツの位置がズレる現象をCLSというらしい。
 
-## 
+参考URL: [CLSとは](https://www.start-point.net/blog/web/html/cls/)
+[Google社員のTwitter:CLSの解説動画](https://twitter.com/addyosmani/status/1276779799198007301?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1276779799198007301%7Ctwgr%5E%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fwww.start-point.net%2Fblog%2Fweb%2Fhtml%2Fcls%2F)
+
+## 今後行いたいこと
+- **ThumborというOSSの画像CDN実装を用いて自前でCDNサーバを構築する**
+- **ライブラリの削減**
+    - ReactではPreactという軽量パッケージがあるが、Vue(Nuxt.js)にもあるかもしれない。
+    - パフォーマンスを考える上でライブラリの削減からは逃げられないので、補っておきたい。
+
+## 総評
+今回、CyberAgentのSpeedHackathonを行う代わりに、自分で外部APIから取得した大量の画像を読み込むパフォーマンス改善を行った。
+
+画像最適化、ガタン問題対処といった行いたいパフォーマンス改善はできた。しかし、SpeedHackathonで行うWebpack周りの調整、ライブラリの削減等を行えなかった。今後はパフォーマンス周りのイベントに積極的に参加していこう思う。

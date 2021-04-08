@@ -3,7 +3,7 @@
     <div class="text-center mt-24">
       <h1 class="text-3xl font-bold text-gray-900">ワンチャンまとめ</h1>
       <p class="text-gray-700 mb-1">広告のようなもの</p>
-      <div class="bg-green-600 flex justify-center h-320px w-full">
+      <div class="bg-green-600 flex justify-center h-80 w-full">
         <Advertising />
       </div>
       <Button class="mt-8" />

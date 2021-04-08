@@ -1,7 +1,7 @@
 <template>
     <div>
         <nuxt-link :to="`/advertising`">
-            <img width="320" height="320" loading='lazy' class="w-full" :src='this.image' />
+            <img loading='lazy' class="w-full" :src='this.image' />
         </nuxt-link>
     </div>
 </template>
