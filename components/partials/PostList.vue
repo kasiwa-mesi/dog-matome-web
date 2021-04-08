@@ -4,7 +4,7 @@
       <li v-for="image in images" :key="image">
         <div class="mb-4">
               <div class="flex justify-center">
-                <img loading='lazy' :src="baseUrl + image">
+                <img width="320" height="320" loading='lazy' :src="baseUrl + image">
               </div>
         </div>
       </li>

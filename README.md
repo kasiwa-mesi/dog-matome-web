@@ -39,3 +39,7 @@ Chrome最新版で適切に動けばいいとする。
 ### LazyLoad + 画像形式変更後のパフォーマンス
 ![](https://res.cloudinary.com/kasiwa/image/upload/v1617898329/github/performance_Fixed.png)
 - 大量の画像を読み込むによるパフォーマンスの低下は画像形式をWebPに変更し、LazyLoadを実装したことにより、かなりマシになったっぽい。
+
+## ガタン問題への対処
+
+## 
