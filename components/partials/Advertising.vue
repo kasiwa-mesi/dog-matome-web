@@ -1,7 +1,8 @@
 <template>
     <div class="flex justify-center">
         <nuxt-link :to="`/advertising`">
-            <img loading='lazy' class="w-full" :src='this.image' />
+            <!-- <img loading='lazy' class="w-full" :src='this.image' /> -->
+            <img class="w-full" :src='this.image' />
         </nuxt-link>
     </div>
 </template>
