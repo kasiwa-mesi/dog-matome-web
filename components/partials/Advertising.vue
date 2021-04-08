@@ -17,8 +17,9 @@ export default {
         fetch('https://dog.ceo/api/breeds/image/random').then((res) => {
             console.log(res)
             res.json().then((response) => {
-                const baseUrl = 'https://res.cloudinary.com/kasiwa/image/fetch/f_webp,q_auto,w_320,h_320/'
-                this.image = baseUrl + response.message
+                // const baseUrl = 'https://res.cloudinary.com/kasiwa/image/fetch/f_webp,q_auto,w_320,h_320/'
+                // this.image = baseUrl + response.message
+                this.image = response.message
             })
             // console.log(res.json())
             // response = res.json()
