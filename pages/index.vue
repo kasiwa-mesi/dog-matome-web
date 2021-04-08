@@ -5,7 +5,7 @@
       <p class="text-gray-700 mb-1">広告のようなもの</p>
       <Advertising />
       <Button class="mt-8" />
-      <h2 class="text-xl font-bold mt-12">みんなのプロジェクト</h2>
+      <h2 class="text-xl font-bold mt-12">いろんなワンチャン</h2>
       <PostList class="mt-2" />
     </div>
   </div>
