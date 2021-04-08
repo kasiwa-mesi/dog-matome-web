@@ -16,7 +16,7 @@ export default {
     mounted() {
         fetch('https://dog.ceo/api/breeds/image/random').then((res) => {
             res.json().then((response) => {
-                const baseUrl = 'https://res.cloudinary.com/kasiwa/image/fetch/f_webp,q_auto,w_320,h_320/'
+                const baseUrl = 'https://res.cloudinary.com/kasiwa/image/fetch/f_auto,q_auto,w_320,h_320/'
                 this.image = baseUrl + response.message
             })
         })

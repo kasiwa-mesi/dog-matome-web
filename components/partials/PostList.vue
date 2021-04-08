@@ -17,7 +17,7 @@ export default {
     data() {
         return {
             images: [],
-            baseUrl: 'https://res.cloudinary.com/kasiwa/image/fetch/f_webp,q_auto,w_320,h_320/'
+            baseUrl: 'https://res.cloudinary.com/kasiwa/image/fetch/f_auto,q_auto,w_320,h_320/'
         }
     },
     mounted() {
