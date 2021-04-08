@@ -34,4 +34,4 @@ Chrome最新版で適切に動けばいいとする。
 ## 実装によるパフォーマンスの変化（LightHouse）
 - 画像最適化改善前のパフォーマンス
 ![](https://res.cloudinary.com/kasiwa/image/upload/v1617897295/github/performance.png) 
-- やはり、WebP、画像サイズを指定していなければ、
+- やはり、画像形式をWebPに指定し、画像サイズを指定していなければ、少し重そう。
